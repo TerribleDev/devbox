@@ -4,6 +4,7 @@ class ubuntuDesktop {
 
   package { "UbuntuDesktopPackages" : 
   name=>$UbuntuDesktop,
-  ensure => "installed"
+  ensure => "installed",
+  require => Exec["apt-get update"]
   }
 }

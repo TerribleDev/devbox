@@ -4,6 +4,7 @@ class devPackages {
 
   package { "DevPackages": 
   name=>$Packages,
-  ensure => "installed"
+  ensure => "installed",
+  require => Exec["apt-get update"]
   }
 }

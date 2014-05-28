@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = box
   config.vm.box_url = url
   config.vm.host_name = hostname
- 
+  config.vm.network :public_network
   
   config.vm.provider "virtualbox" do |v|
   v.memory = ram
