@@ -1,1 +1,3 @@
 include baseconfig
+include devPackages
+include ubuntuDesktop
