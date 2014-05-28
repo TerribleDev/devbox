@@ -1,3 +1,4 @@
 include baseconfig
 include devPackages
 include ubuntuDesktop
+include monoDevelop
