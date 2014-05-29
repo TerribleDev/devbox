@@ -13,9 +13,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   v.cpus = 2
 end
    
+  config.vm.provision :shell do |shell|
+    shell.inline = "puppet module install puppetlabs/apt"
+  end
   
   config.vm.provision :puppet do |puppet|
-    puppet.module_path = 'puppet/modules'
     puppet.manifests_path = 'puppet/manifests'
     puppet.manifest_file = 'site.pp'
   end
