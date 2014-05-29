@@ -1,10 +1,9 @@
 class devPackages {
-	$Packages = ['cowsay', 'ruby', 'nodejs', 'irssi', 'git']
+	$Packages = ['cowsay', 'ruby', 'rubygems', 'nodejs', 'irssi', 'git']
   
 
-  package { "DevPackages": 
-  name=>$Packages,
+  package { $Packages: 
   ensure => "installed",
-  require => Exec["apt-get update"]
+  require => Exec['apt-get update']
   }
 }

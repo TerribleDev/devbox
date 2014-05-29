@@ -2,9 +2,8 @@ class ubuntuDesktop {
 	$UbuntuDesktop = ['gdm', 'ubuntu-desktop']
   
 
-  package { "UbuntuDesktopPackages" : 
-  name=>$UbuntuDesktop,
+  package { $UbuntuDesktop : 
   ensure => "installed",
-  require => Exec["apt-get update"]
+  require => Exec['apt-get update']
   }
 }

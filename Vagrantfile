@@ -1,6 +1,6 @@
-box      = 'fadenb/ubnt-quantal-puppet3'
+box      = 'dhoppe/ubuntu-12.04-amd64'
 hostname = 'dev'
-ram      = '4028'
+ram      = '2048'
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
