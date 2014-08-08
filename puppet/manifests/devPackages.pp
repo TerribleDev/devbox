@@ -1,5 +1,5 @@
 class devPackages {
-	$Packages = ['cowsay', 'nodejs', 'npm', 'nginx', 'irssi', 'git', 'golang', 'tmux', 'geany' ]
+	$Packages = ['cowsay', 'nodejs', 'npm', 'nginx', 'irssi', 'git', 'golang', 'tmux', 'geany', 'rubygems' ]
   
 
   package { $Packages: 
