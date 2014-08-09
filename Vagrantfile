@@ -1,5 +1,5 @@
-box      = 'dhoppe/ubuntu-12.04-amd64'
-hostname = 'dev'
+box      = 'ubuntu/trusty64'
+hostname = 'TrustyDev'
 ram      = '2048'
 VAGRANTFILE_API_VERSION = "2"
 
